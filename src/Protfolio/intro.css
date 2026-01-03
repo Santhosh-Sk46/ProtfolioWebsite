@@ -58,7 +58,7 @@
 
 @media screen and (max-width:720px) {
     .bg {
-        right: 10vw
+        right: -10vw
     }
     .introContent {
         font-size: 10vw;
@@ -69,12 +69,21 @@
     
 }
 
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+}
+
 @media screen and (max-width:480px) {
     .bg {
         right: -20vw
     }
 
 }
+
 
 
 
