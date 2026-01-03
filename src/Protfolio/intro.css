@@ -13,7 +13,7 @@
     right: -4rem;
     z-index: -1;
     object-fit: cover;
-    height: 100vh;
+    height: 10rem;
 }
 
 .introContent {
@@ -69,25 +69,6 @@
     
 }
 
-@media (max-width: 1000px) {
-  .intro {
-    flex-direction: column;
-    padding: 20px;
-    text-align: center;
-  }
-
-  .intro-text {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-
-  .intro-img {
-    width: 80%;
-    max-width: 280px;
-    margin: auto;
-  }
-}
-
 
 
 @media screen and (max-width:480px) {
@@ -96,6 +77,7 @@
     }
 
 }
+
 
 
 
