@@ -13,7 +13,7 @@
     right: -4rem;
     z-index: -1;
     object-fit: cover;
-    height: 10rem;
+    height: 100vh;
 }
 
 .introContent {
@@ -77,6 +77,7 @@
     }
 
 }
+
 
 
 
