@@ -8,6 +8,9 @@
 }
 
 .bg {
+      width: 100%;
+  height: auto;
+  object-fit: contain;
     position: absolute;
     top: 0rem;
     right: -4rem;
@@ -91,6 +94,7 @@
     }
 
 }
+
 
 
 
