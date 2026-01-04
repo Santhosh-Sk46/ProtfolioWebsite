@@ -21,13 +21,14 @@ const Skills = () => {
                 <div className="skillBar">
                     <img src={AppDesign} alt="AppDesign" className="skillBarImg" />
                     <div className="skillBarText">
-                        <h2>App Design</h2>
-                        <p>You can write text related to mobile app development.</p>
+                        <h2>Web Developing</h2>
+                        <p>I’m a web developer specializing in modern, responsive, and performance-driven web applications..</p>
                     </div>
                 </div>
             </div>
         </section>
     );
 }
+
 
 export default Skills;
