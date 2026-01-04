@@ -1,100 +1,103 @@
 .navbar {
     background: rgb(30, 30, 30);
-    height: 5rem;
-    width: 100vw;
-    max-width: 75rem;
+    height: 4.5rem;
+    width: 100%;
+    max-width: 100%;
     margin: 0 auto;
-    padding: 1rem 2rem;
+    padding: 0.75rem 1.25rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: sticky;
     top: 0;
-    z-index: 3;
+    z-index: 1000;
 }
 
-.logo {
-    object-fit: cover;
-    height: 3rem;
-    width: 4rem;
+/* Logo */
+.navbar-logo {
+    height: 2.5rem;
+    width: auto;
 }
-.navbar-logo{
-    height: 3rem;
-    
-}
+
+/* Desktop menu */
 .desktopMenuListItem {
     margin: 1rem;
     cursor: pointer;
 }
 
-.desktopMenuListItem:hover {
+.desktopMenuListItem:hover,
+.active {
     color: yellow;
-    padding-bottom: 0.5rem;
     border-bottom: 3px solid yellow;
+    padding-bottom: 0.4rem;
 }
 
+/* Contact button */
 .desktopMenuBtn {
     background: white;
     color: black;
     border: none;
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 0 1rem;
+    padding: 0.4rem 1rem;
     border-radius: 2rem;
+    font-size: 0.9rem;
 }
 
 .desktopMenuImg {
-    object-fit: cover;
     height: 1rem;
     width: 1rem;
-    margin: 1rem;
+    margin-right: 0.5rem;
 }
 
-.active {
-    color: yellow;
-    padding-bottom: 0.5rem;
-    border-bottom: 3px solid yellow;
-}
-
+/* Mobile menu icon */
 .mobMenu {
     display: none;
-    object-fit: cover;
     height: 1.8rem;
+    cursor: pointer;
 }
 
+/* Mobile dropdown menu */
 .navMenu {
     position: absolute;
-    top: 4rem;
-    right: 2rem;
-    z-index: 2;
-    display: flex;
-    flex-direction: column;
-    padding: 0.5rem;
-    height:fit-content;
-    min-width: 15rem;
+    top: 4.5rem;
+    right: 1rem;
+    width: calc(100% - 2rem);
     background: rgb(40, 40, 40);
     border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 0;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
 
+/* Mobile menu items */
 .listItem {
     color: white;
-    padding: 0.5rem 3rem;
-    margin: 0.25rem;
+    padding: 0.9rem 1.5rem;
+    font-size: 1rem;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.listItem:last-child {
+    border-bottom: none;
+}
+
+.listItem:hover {
     background: rgb(30, 30, 30);
 }
 
-@media screen and (max-width:720px) {
-    .mobMenu {
-        display: flex;
-    }
+/* 🔥 Mobile responsive rules */
+@media screen and (max-width: 768px) {
     .desktopMenu {
         display: none;
     }
+
     .desktopMenuBtn {
         display: none;
     }
 
+    .mobMenu {
+        display: block;
+    }
 }
-
-
